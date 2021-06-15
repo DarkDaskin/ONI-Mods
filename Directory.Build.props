@@ -11,9 +11,11 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
-  <ItemGroup Condition="Exists('mod_info.yaml')">
-    <None Remove="mod_info.yaml" />
-    <Content Include="mod_info.yaml" CopyToOutputDirectory="PreserveNewest" />
+  <ItemGroup>
+    <_ModContent Include="mod_info.yaml" />
+    <_ModContent Include="preview.png" />
+    <None Remove="@(_ModContent)" />
+    <Content Include="@(_ModContent)" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
   <ItemGroup>
