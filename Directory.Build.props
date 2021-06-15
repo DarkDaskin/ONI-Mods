@@ -1,21 +1,19 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <PropertyGroup>
     <TargetFramework>net46</TargetFramework>
     <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
     <GameName>Oxygen Not Included</GameName>
     <GameExecutableFileName>OxygenNotIncluded.exe</GameExecutableFileName>
-    <ModPath>$(USERPROFILE)\Documents\Klei\OxygenNotIncluded\mods\Dev\PerPlanetoidMaterials</ModPath>
+    <ModPath>$(USERPROFILE)\Documents\Klei\OxygenNotIncluded\mods\Dev\$(ProjectName)\</ModPath>
+    <Authors>Dark Daskin</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
-  <ItemGroup>
+  <ItemGroup Condition="Exists('mod_info.yaml')">
     <None Remove="mod_info.yaml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="mod_info.yaml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="mod_info.yaml" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
   <ItemGroup>

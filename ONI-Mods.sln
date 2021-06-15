@@ -3,12 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OxygenNotIncluded.PerPlanetoidMaterials", "OxygenNotIncluded.PerPlanetoidMaterials\OxygenNotIncluded.PerPlanetoidMaterials.csproj", "{45EAE78A-36C5-43CF-9D8F-41B313A813AF}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D11662A4-2B47-4CA6-83BA-E58B558A0FE3}"
 	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerPlanetoidMaterials", "PerPlanetoidMaterials\PerPlanetoidMaterials.csproj", "{40255FD0-56D8-4FAD-B0FF-19E9DC77AF2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,10 +18,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{45EAE78A-36C5-43CF-9D8F-41B313A813AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{45EAE78A-36C5-43CF-9D8F-41B313A813AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{45EAE78A-36C5-43CF-9D8F-41B313A813AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{45EAE78A-36C5-43CF-9D8F-41B313A813AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40255FD0-56D8-4FAD-B0FF-19E9DC77AF2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40255FD0-56D8-4FAD-B0FF-19E9DC77AF2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40255FD0-56D8-4FAD-B0FF-19E9DC77AF2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40255FD0-56D8-4FAD-B0FF-19E9DC77AF2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

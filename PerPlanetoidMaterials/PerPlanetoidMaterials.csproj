@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Product>Per-planetoid Materials</Product>
+    <Description>Preserves last selected building material for each planetoid separately.</Description>
+    <RootNamespace>OxygenNotIncluded.PerPlanetoidMaterials</RootNamespace>
+  </PropertyGroup>
+
+</Project>
