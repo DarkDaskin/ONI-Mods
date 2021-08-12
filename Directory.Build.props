@@ -2,7 +2,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <PropertyGroup>
-    <TargetFramework>net46</TargetFramework>
+    <TargetFramework>net471</TargetFramework>
     <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
     <GameName>Oxygen Not Included</GameName>
     <GameExecutableFileName>OxygenNotIncluded.exe</GameExecutableFileName>
@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <_ModContent Include="mod_info.yaml" />
+    <_ModContent Include="mod.yaml" />
     <_ModContent Include="preview.png" />
     <None Remove="@(_ModContent)" />
     <Content Include="@(_ModContent)" CopyToOutputDirectory="PreserveNewest" />

@@ -1,0 +1,3 @@
+title: Per-planetoid Materials
+description: Preserves last selected building material for each planetoid separately.
+staticID: PerPlanetoidMaterials

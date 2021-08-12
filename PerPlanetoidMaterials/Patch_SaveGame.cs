@@ -1,5 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
-using Harmony;
+using HarmonyLib;
 
 namespace OxygenNotIncluded.PerPlanetoidMaterials
 {
